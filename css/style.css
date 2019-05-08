@@ -50,8 +50,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 a img:hover {
   opacity: 0.6;
-  border-style: solid;
-  border-color:black;
 
 }
 
