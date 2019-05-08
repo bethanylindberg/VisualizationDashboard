@@ -49,6 +49,30 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 610px;
 }
 
+* {
+  box-sizing: border-box;
+ }
+ *:before,
+ *:after {
+  box-sizing: border-box;
+ }
+ html,
+ body {
+  height: 100%;
+  position: relative;
+ }
+ .main-container {
+  min-height: 100vh; /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 100px; /* height of your footer */
+ }
+.main-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 .bg-color {
   background-color: RGBA(0, 0, 0, 0.41);
 }
@@ -140,10 +164,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
-  color: #777;
+  font-color: white;
   text-align: left;
   list-style: none;
-  background-color: #fff;
+  background-color: #777;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
@@ -481,7 +505,7 @@ h3.txt-tl {
 }
 
 a, a:hover {
-  color: #FFD34E;
+  color: white;
 }
 
 .cont-title {
@@ -529,6 +553,9 @@ a, a:hover {
 #footer {
   background-color: #191919;
   padding: 20px 0px;
+  position: absolute;
+  bottom:0;
+  width:100%;
 }
 
 .footer-copyright {
