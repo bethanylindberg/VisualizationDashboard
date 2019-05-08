@@ -7,9 +7,10 @@
   });
   wow.init();
 
-  $(".navbar-collapse a").on('click', function() {
-    $(".navbar-collapse.collapse").removeClass('in');
-  });
+// $(".navbar-collapse a").on('click', function() {
+//    $(".navbar-collapse.collapse").removeClass('in');
+//  });
+
 
   // Navigation scrolls
   $('.navbar-nav li a').bind('click', function(event) {
